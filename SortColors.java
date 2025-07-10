@@ -1,7 +1,3 @@
-
-import java.util.ArrayList;
-import java.util.Arrays;
-
 class Solution {
     public void sortColors(int[] nums) {
         if (nums == null || nums.length == 0) {
@@ -12,7 +8,7 @@ class Solution {
         int two = n - 1;
 
         int i = 0;
-        while (i < n) {
+        while (i <= two) {
             if (nums[i] == 0) {
                 swap(nums, zero, i);
                 zero++;
@@ -25,10 +21,7 @@ class Solution {
             } else {
                 i++;
             }
-            ArrayList<Integer> list = Arrays.asList(nums);
         }
-
-
         
     }
 
